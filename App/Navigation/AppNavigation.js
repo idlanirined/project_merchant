@@ -12,8 +12,8 @@ import HomeNavigation from './HomeNavigation'
 
 
 const MainNavigator = createStackNavigator({
-    Login: { screen: Login, navigationOptions: { header: null } },
-    HomeNavigation: { screen: HomeNavigation, navigationOptions: { header: null} },
+    Login: { screen: Login, navigationOptions: { headerShown: false } },
+    HomeNavigation: { screen: HomeNavigation, navigationOptions: { headerShown: false} },
 }, {
     headerMode: 'screen',
     initialRouteName: 'Login', 

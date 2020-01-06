@@ -1,6 +1,7 @@
 
 import React from 'react'
 import { createBottomTabNavigator } from 'react-navigation-tabs'
+
 //Screen
 import HomePageScreen from '../Container/Homepage/HomePageScreen'
 import Images from '../Library/Images'
@@ -9,6 +10,10 @@ import Images from '../Library/Images'
 // import { Colors, Images } from '../Themes'
 import { Image, Text } from 'react-native'
 import { View } from 'native-base';
+import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
+import Entypo from 'react-native-vector-icons/Entypo';
 
 
 export default HomeNavigation = createBottomTabNavigator({
@@ -21,60 +26,63 @@ export default HomeNavigation = createBottomTabNavigator({
             ),
             tabBarIcon: ({ tintColor }) => (  
                 <View style={{ justifyContent: 'center', alignSelf: 'center'}}>  
-                    {/* <Icon style={[{color: tintColor}]} size={25} name={'ios-home'}/>   */}
-                    {/* <Image source={Images.iconHome} style={{marginTop:10, width: 23, height: 30, tintColor: tintColor, resizeMode: 'contain'}}/> */}
+                    <FontAwesome5 name='home' size={20} color={tintColor}/>  
                 </View>),  
         }
     },
-    MyOrder: {
+    Schedule: {
         screen: HomePageScreen, 
         navigationOptions: {
             header: null,
             tabBarLabel: ({ tintColor }) => (
-                <Text style={[styles.label, { color: tintColor, marginBottom:10 }]}>My Order</Text>
+                <Text style={[styles.label, { color: tintColor, marginBottom:10 }]}>Schedule</Text>
             ),
             tabBarIcon: ({ tintColor }) => (  
                 <View style={{ justifyContent: 'center', alignSelf: 'center'}}>  
-                    {/* <Image source={Images.iconMyOrder} style={{ marginTop:10, width: 23, height: 30, tintColor: tintColor, resizeMode: 'contain'}}/> */}
+                <FontAwesome5 name='calendar' size={20} color={tintColor}/> 
                 </View>),  
         }
     },
-    Nearby: {
-        screen: HomePageScreen, navigationOptions: {
+    Wallet: {
+        screen: HomePageScreen, 
+        navigationOptions: {
             header: null,
             tabBarLabel: ({ tintColor }) => (
-                <Text style={[styles.label, { color: tintColor, marginBottom:10 }]}>Maps</Text>
+                <Text style={[styles.label, { color: tintColor, marginBottom:10 }]}>Wallet</Text>
             ),
             tabBarIcon: ({ tintColor }) => (  
                 <View style={{ justifyContent: 'center', alignSelf: 'center'}}>  
-                    {/* <Image source={Images.iconNearby} style={{ marginTop:10, width: 23, height: 30, tintColor: tintColor, resizeMode: 'center'}}/> */}
-                </View>),
+                <Entypo name='wallet' size={20} color={tintColor}/> 
+                </View>),  
         }
     },
     History: {
-        screen: HomePageScreen, navigationOptions: {
+        screen: HomePageScreen, 
+        navigationOptions: {
             header: null,
             tabBarLabel: ({ tintColor }) => (
                 <Text style={[styles.label, { color: tintColor, marginBottom:10 }]}>History</Text>
             ),
-            tabBarIcon: ({ tintColor }) => ( 
+            tabBarIcon: ({ tintColor }) => (  
                 <View style={{ justifyContent: 'center', alignSelf: 'center'}}>  
-                    {/* <Image source={Images.iconhistory} style={{ marginTop:10, width: 23, height: 30, tintColor: tintColor, resizeMode: 'contain'}}/>   */}
-                </View>), 
+                <FontAwesome5 name='history' size={20} color={tintColor}/> 
+                </View>),  
         }
-    },
+    }, 
     Account: {
-        screen: HomePageScreen, navigationOptions: {
+        screen: HomePageScreen, 
+        navigationOptions: {
             header: null,
             tabBarLabel: ({ tintColor }) => (
-                <Text style={[styles.label, { color: tintColor, marginBottom:10 }]}>Account</Text>
+                <Text style={[styles.label, { color: tintColor, marginBottom:10 }]}>Profile</Text>
             ),
             tabBarIcon: ({ tintColor }) => (  
                 <View style={{ justifyContent: 'center', alignSelf: 'center'}}>  
-                        {/* <Image source={Images.iconAccount} style={{ marginTop:10, width: 23, height: 30, tintColor: tintColor, resizeMode: 'contain'}}/> */}
+                <SimpleLineIcons name='user' size={20} color={tintColor}/>   
                 </View>),
         }
-    }
+    },
+    
 }, { 
         tabBarOptions: {
             inactiveTintColor: '#808080',
