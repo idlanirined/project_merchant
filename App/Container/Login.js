@@ -64,7 +64,7 @@ class Login extends Component {
                 </View>
                 <View style={{ flexDirection: 'row', bottom: -80}}>
                     <Text style={{ fontFamily: Fonts.type.bold}}>Don't have an account? </Text>
-                    <Text style={{ color: '#00CCFF', fontFamily: Fonts.type.bold}} onPress={()=>  null }>Sign Up</Text>
+                    <Text style={{ color: '#00CCFF', fontFamily: Fonts.type.bold}} onPress={()=> this.props.navigation.navigate('RegisterScreen')}>Sign Up</Text>
                 </View>
                 <View style={{ backgroundColor: 'transparent',width: 300, paddingHorizontal: 30, bottom: -80, left: 0}}>
                     <LinearGradient start={{x: 0, y: 0}} end={{x: 0.9, y: 0.5}} colors={['#FFFFFF', '#FFFFFF']} style={{ borderRadius: 30, marginVertical: 20, justifyContent: 'flex-end' }}>

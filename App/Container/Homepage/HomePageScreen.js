@@ -25,10 +25,10 @@ export default class HomePageScreen extends Component {
         <View style={{ paddingHorizontal: 25, height: 50, borderBottomColor: '#dadada', borderBottomWidth: 1, elevation: 1, flexDirection: 'row', justifyContent: 'space-between' }}>
           <View style={{ flexDirection: 'row' }}>
             <FontAwesome5 name='user-circle' size={28} style={{ alignSelf: 'center' }} />
-            <Text style={{ marginLeft: 10, alignSelf: 'center', fontSize: 16 }}>Welcome</Text>
+            <Text style={{ marginLeft: 10, alignSelf: 'center', fontSize: 16, fontWeight: 'bold' }}>Welcome</Text>
           </View>
           <View style={{ justifyContent: 'center' }}>
-            <Text style={{ marginLeft: 10, alignSelf: 'center', fontSize: 16 }}>IDR 50.000,-</Text>
+            <Text style={{ marginLeft: 10, alignSelf: 'center', fontSize: 16,  fontWeight: 'bold' }}>IDR 50.000,-</Text>
           </View>
           <Switch
             value={this.state.switch}
@@ -38,7 +38,7 @@ export default class HomePageScreen extends Component {
         <View style={{ height: 1, borderBottomColor: '#dadada', borderBottomWidth: 1, elevation: 10 }} />
 
         <View style={{ paddingVertical: 10}}>
-          <Text style={{paddingHorizontal: 20, }}>Progress</Text> 
+          <Text style={{paddingHorizontal: 20,  fontWeight: 'bold'}}>Progress</Text> 
         </View>
       </ScrollView>
     );
