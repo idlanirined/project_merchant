@@ -14,6 +14,7 @@ import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import Entypo from 'react-native-vector-icons/Entypo';
+import Wallet from '../Container/Wallet'
 
 
 export default HomeNavigation = createBottomTabNavigator({
@@ -44,7 +45,7 @@ export default HomeNavigation = createBottomTabNavigator({
         }
     },
     Wallet: {
-        screen: HomePageScreen, 
+        screen: Wallet, 
         navigationOptions: {
             header: null,
             tabBarLabel: ({ tintColor }) => (

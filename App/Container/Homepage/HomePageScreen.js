@@ -8,7 +8,8 @@ export default class HomePageScreen extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      switch: false
+      switch: false,
+      switch1: false
     };
   }
 
@@ -28,7 +29,7 @@ export default class HomePageScreen extends Component {
             <Text style={{ marginLeft: 10, alignSelf: 'center', fontSize: 16, fontWeight: 'bold' }}>Welcome</Text>
           </View>
           <View style={{ justifyContent: 'center' }}>
-            <Text style={{ marginLeft: 10, alignSelf: 'center', fontSize: 16,  fontWeight: 'bold' }}>IDR 50.000,-</Text>
+            <Text style={{ marginLeft: 10, alignSelf: 'center', fontSize: 16, fontWeight: 'bold' }}>IDR 50.000,-</Text>
           </View>
           <Switch
             value={this.state.switch}
@@ -37,9 +38,28 @@ export default class HomePageScreen extends Component {
         </View>
         <View style={{ height: 1, borderBottomColor: '#dadada', borderBottomWidth: 1, elevation: 10 }} />
 
-        <View style={{ paddingVertical: 10}}>
-          <Text style={{paddingHorizontal: 20,  fontWeight: 'bold'}}>Progress</Text> 
+        <View style={{ paddingVertical: 10 }}>
+          <Text style={{ paddingHorizontal: 20, fontWeight: 'bold' }}>Progress</Text>
         </View>
+        {/* Slot 1 */}
+        <View style={{ paddingVertical: 10, height: 20 }}>
+          <Text style={{ paddingHorizontal: 20, alignSelf: 'flex-end', fontWeight: 'bold', top: -10 }}>Slot 1</Text>
+        </View>
+        <View style={{ backgroundColor: 'white', paddingHorizontal: 25, height: 60, borderBottomColor: '#dadada', borderBottomWidth: 1, elevation: 0, flexDirection: 'row', justifyContent: 'space-between' }}>
+          <View style={{ flexDirection: 'column' }}>
+            <Text style={{ marginLeft: 10, alignSelf: 'center', fontSize: 14, fontWeight: 'bold', left: -15 }}>Honda Jazz / D 1514 BFF</Text>
+            <Text style={{color: 'grey', marginLeft: 10, alignSelf: 'center', fontSize: 14, fontWeight: 'bold', left:-75 }}>7 min</Text>
+            <Text style={{ marginLeft: 10, alignSelf: 'center', fontSize: 14, fontWeight: 'bold', left: -70 }}>Prosess</Text>
+          </View>
+
+          <Switch
+            value={this.state.switch1}
+            onValueChange={() => this.setState({ switch1: !this.state.switch1 })}
+          />
+        </View>
+
+
+
       </ScrollView>
     );
   }

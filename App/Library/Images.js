@@ -9,6 +9,10 @@ const Images = {
     iconPassword: require('../Assets/Icon/key.png'),
     iconFacebook: require('../Assets/Icon/facebook.png'),
     iconGoogle: require('../Assets/Icon/google.png'),
+    iconGopay: require('../Assets/Icon/Gopay.png'),
+    iconOVO: require('../Assets/Icon/OVO.png'),
+    iconBalance: require('../Assets/Icon/balance.png'),
+    iconTopUp: require('../Assets/Icon/topup.png'),
 }
 
 export default Images

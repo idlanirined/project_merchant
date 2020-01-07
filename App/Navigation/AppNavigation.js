@@ -10,12 +10,14 @@ import IconBack from 'react-native-vector-icons/Ionicons'
 import Login from '../Container/Login'
 import HomeNavigation from './HomeNavigation'
 import RegisterScreen from '../Container/RegisterScreen'
+import Wallet from '../Container/Wallet'
 
 
 const MainNavigator = createStackNavigator({
     Login: { screen: Login, navigationOptions: { headerShown: false } },
     HomeNavigation: { screen: HomeNavigation, navigationOptions: { headerShown: false} },
     RegisterScreen : { screen: RegisterScreen , navigationOptions: { headerShown: false} },
+    Wallet : { screen: Wallet , navigationOptions: { headerShown: false} },
 
 }, {
     headerMode: 'screen',
