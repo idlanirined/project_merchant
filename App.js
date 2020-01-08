@@ -8,7 +8,7 @@ import { Container } from 'native-base';
 export default class App extends Component {
   render() {
     return (
-      <Container style={{ marginTop: DeviceInfo.hasNotch() ? 25 : 0}}>
+      <Container style={{ marginTop: DeviceInfo.hasNotch() ? 25 : 25}}>
         <StatusBar backgroundColor='#00CCFF' translucent  barStyle={'light-content'}/>
         <AppNavigation />
       </Container>
