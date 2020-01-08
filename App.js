@@ -9,7 +9,7 @@ export default class App extends Component {
   render() {
     return (
       <Container style={{ marginTop: DeviceInfo.hasNotch() ? 25 : 0}}>
-        <StatusBar backgroundColor='black' translucent  barStyle={'light-content'}/>
+        <StatusBar backgroundColor='#00CCFF' translucent  barStyle={'light-content'}/>
         <AppNavigation />
       </Container>
     )
