@@ -23,9 +23,9 @@ export default class HomePageScreen extends Component {
           </View>
         </View>
 
-        <View style={{ paddingHorizontal: 25, height: 50, borderBottomColor: '#dadada', borderBottomWidth: 1, elevation: 1, flexDirection: 'row', justifyContent: 'space-between' }}>
+        <View style={{ paddingHorizontal: 25, height: 50, borderBottomColor: '#dadada', borderBottomWidth: 1, flexDirection: 'row', justifyContent: 'space-between' }}>
           <View style={{ flexDirection: 'row' }}>
-            <FontAwesome5 name='user-circle' size={28} style={{ alignSelf: 'center' }} />
+            <FontAwesome5 name='user-circle' size={28} style={{ alignSelf: 'center', marginLeft:-5 }} />
             <Text style={{ marginLeft: 10, alignSelf: 'center', fontSize: 16, fontWeight: 'bold' }}>Welcome</Text>
           </View>
           <View style={{ justifyContent: 'center' }}>
@@ -34,32 +34,41 @@ export default class HomePageScreen extends Component {
           <Switch
             value={this.state.switch}
             onValueChange={() => this.setState({ switch: !this.state.switch })}
+            style={{marginRight:-13}}
           />
         </View>
-        <View style={{ height: 1, borderBottomColor: '#dadada', borderBottomWidth: 1, elevation: 10 }} />
+        <View style={{ height: 1, borderBottomColor: '#dadada', borderBottomWidth: 1, elevation: 5 }} />
 
         <View style={{ paddingVertical: 10 }}>
-          <Text style={{ paddingHorizontal: 20, fontWeight: 'bold' }}>Progress</Text>
+          <Text style={{ paddingHorizontal: 20, fontWeight: 'bold', fontSize:18 }}>Progress</Text>
         </View>
         {/* Slot 1 */}
         <View style={{ paddingVertical: 10, height: 20 }}>
-          <Text style={{ paddingHorizontal: 20, alignSelf: 'flex-end', fontWeight: 'bold', top: -10 }}>Slot 1</Text>
+          <Text style={{ paddingHorizontal: 20, alignSelf: 'flex-end', fontWeight: 'bold', top: -10, fontSize:18 }}>Slot 1</Text>
         </View>
         <View style={{ backgroundColor: 'white', paddingHorizontal: 25, height: 60, borderBottomColor: '#dadada', borderBottomWidth: 1, elevation: 0, flexDirection: 'row', justifyContent: 'space-between' }}>
           <View style={{ flexDirection: 'column' }}>
             <Text style={{ marginLeft: 10, alignSelf: 'center', fontSize: 14, fontWeight: 'bold', left: -15 }}>Honda Jazz / D 1514 BFF</Text>
-            <Text style={{color: 'grey', marginLeft: 10, alignSelf: 'center', fontSize: 14, fontWeight: 'bold', left:-75 }}>7 min</Text>
-            <Text style={{ marginLeft: 10, alignSelf: 'center', fontSize: 14, fontWeight: 'bold', left: -70 }}>Prosess</Text>
+            <Text style={{color: 'grey', marginLeft: 10, alignSelf: 'center', fontSize: 14, fontWeight: 'bold', left:-65 }}>7 min</Text>
+            <Text style={{ marginLeft: 25, alignSelf: 'center', fontSize: 14, fontWeight: 'bold', left: -65 }}>Prosess</Text>
           </View>
 
           <Switch
             value={this.state.switch1}
             onValueChange={() => this.setState({ switch1: !this.state.switch1 })}
+            style={{marginRight:-13}}
           />
         </View>
+        {/* Add Slot*/}
+          <View style={{ height: 1, borderBottomColor: '#dadada', marginTop:350}} />
 
-
-
+        <View style={{ paddingVertical: 10 , marginLeft:20}}>
+          <Image source={Images.newslot} style={{height:70, width:70}}/>
+          <Text style={{ paddingHorizontal: 85, fontWeight: 'bold', top: -50, fontSize:20 }}>Create New Slot</Text>
+          <Text style={{ paddingHorizontal: 85, fontWeight: 'normal', top: -50, fontSize:14, color:'#aeaeae' }}>Add and delete slot</Text>
+          <Image source={Images.neww} style={{height:40, width:40, alignSelf:'flex-end'}}></Image>
+        </View>
+          
       </ScrollView>
     );
   }

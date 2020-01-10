@@ -13,6 +13,11 @@ const Images = {
     iconOVO: require('../Assets/Icon/OVO.png'),
     iconBalance: require('../Assets/Icon/balance.png'),
     iconTopUp: require('../Assets/Icon/topup.png'),
+
+    //Image
+    newslot: require('../Assets/Image/newslot.png'),
+    neww: require('../Assets/Image/new.png'),
+    backhitam: require('../Assets/Image/Back hitam.png'),
 }
 
 export default Images
