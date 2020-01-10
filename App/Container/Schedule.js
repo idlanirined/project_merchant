@@ -6,17 +6,14 @@ import { Fonts } from '../Themes'
 import Modal from 'react-native-modal'
 import Ionicons from 'react-native-vector-icons/Ionicons'
  
-export default class History extends Component {
+export default class Schedule extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      tableHead: ['Name', 'Car', 'Plate No', 'Date/Time'],
+      tableHead: ['No', 'Car', 'Time', 'Slot', 'Status'],
       tableData: [
-        ['Hamjah H', 'Honda Jazz', 'D 1514 BFF', 'THU,24 Oct / 17.12.11'],
-        ['Hamjah H', 'Honda Jazz', 'D 1514 BFF', 'THU,24 Oct / 17.12.11'],
-         ['Hamjah H', 'Honda Jazz', 'D 1514 BFF', 'THU,24 Oct / 17.12.11'],
-         ['Hamjah H', 'Honda Jazz', 'D 1514 BFF', 'THU,24 Oct / 17.12.11'],
-         ['Hamjah H', 'Honda Jazz', 'D 1514 BFF', 'THU,24 Oct / 17.12.11'],
+        ['1', 'Honda Jazz', '7 min', 'Slot 1', 'Prosess' ],
+     
      
       ],
       modalClear: false
@@ -66,11 +63,9 @@ export default class History extends Component {
                         <Entypo name='chevron-thin-left' size={30} color='white' />
                     </TouchableOpacity>
                     <View style={{ width: '95%', justifyContent: 'center' }}>
-                        <Text style={{ alignSelf: 'center', fontFamily: Fonts.type.medium, color: 'white', fontSize: 20 }}>History</Text>
+                        <Text style={{ alignSelf: 'center', fontFamily: Fonts.type.medium, color: 'white', fontSize: 20 }}>Schedule</Text>
                     </View>
-                    <TouchableOpacity onPress={() => this.setState({ modalClear: true })} style={{ width: '5%', alignSelf: 'center', justifyContent: 'center', left: -20 }}>
-                        <Ionicons name='md-trash' size={28} color='white' />
-                    </TouchableOpacity>
+                  
                 </View>   
                 </View>
 
