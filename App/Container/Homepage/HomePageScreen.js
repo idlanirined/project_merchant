@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, ScrollView, Image } from 'react-native';
+import { View, Text, ScrollView, Image, TouchableOpacity } from 'react-native';
 import Images from '../../Library/Images';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import { Switch } from 'native-base';
@@ -60,13 +60,13 @@ export default class HomePageScreen extends Component {
           />
         </View>
         {/* Add Slot*/}
-          <View style={{ height: 1, borderBottomColor: '#dadada', marginTop:350}} />
+          <TouchableOpacity style={{ height: 1, borderBottomColor: '#dadada', marginTop:350}} />
 
         <View style={{ paddingVertical: 10 , marginLeft:20}}>
           <Image source={Images.newslot} style={{height:70, width:70}}/>
           <Text style={{ paddingHorizontal: 85, fontWeight: 'bold', top: -50, fontSize:20 }}>Create New Slot</Text>
           <Text style={{ paddingHorizontal: 85, fontWeight: 'normal', top: -50, fontSize:14, color:'#aeaeae' }}>Add and delete slot</Text>
-          <Image source={Images.neww} style={{height:40, width:40, alignSelf:'flex-end'}}></Image>
+          <Image source={Images.neww} style={{height:40, width:40, alignSelf:'flex-end', top: -100}}></Image>
         </View>
           
       </ScrollView>
