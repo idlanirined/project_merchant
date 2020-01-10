@@ -56,7 +56,7 @@ class Wallet extends Component {
 
 
                 {/* Top Up */}
-                <TouchableOpacity style={{ backgroundColor: 'white', width: '100%', height: 60, borderRadius: 5, marginTop: 10, paddingVertical: 5, flexDirection: 'row', paddingHorizontal: 20, elevation: 2 }} onPress={() => this.props.navigation.navigate('')}>
+                <TouchableOpacity style={{ backgroundColor: 'white', width: '100%', height: 60, borderRadius: 5, marginTop: 10, paddingVertical: 5, flexDirection: 'row', paddingHorizontal: 20, elevation: 2 }} onPress={() => this.props.navigation.navigate('Topup')}>
 
                     <Image source={Images.iconTopUp} style={{ width: 35, height: 35, resizeMode: 'contain', alignSelf: 'center' }} />
                     <Text style={{ alignSelf: 'center', marginLeft: 20, fontFamily: Fonts.type.medium }}>Top Up</Text>

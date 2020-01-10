@@ -12,6 +12,7 @@ import HomeNavigation from './HomeNavigation'
 import RegisterScreen from '../Container/RegisterScreen'
 import Wallet from '../Container/Wallet'
 import History from '../Container/History'
+import Topup from '../Container/Topup'
 
 
 const MainNavigator = createStackNavigator({
@@ -20,6 +21,7 @@ const MainNavigator = createStackNavigator({
     RegisterScreen : { screen: RegisterScreen , navigationOptions: { headerShown: false} },
     Wallet : { screen: Wallet , navigationOptions: { headerShown: false} },
     History : { screen: History , navigationOptions: { headerShown: false} },
+    Topup : { screen: Topup , navigationOptions: { headerShown: false} },
 
 }, {
     headerMode: 'screen',

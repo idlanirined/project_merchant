@@ -17,7 +17,13 @@ const Images = {
     //Image
     newslot: require('../Assets/Image/newslot.png'),
     neww: require('../Assets/Image/new.png'),
-    backhitam: require('../Assets/Image/Back hitam.png'),
+    backhitam: require('../Assets/Image/Backhitam.png'),
+    banktransfer: require('../Assets/Image/BankTransfer.png'),
+    bankbca: require('../Assets/Image/BankBCA.png'),
+    bankbri: require('../Assets/Image/BankBRI.png'),
+    bankbni: require('../Assets/Image/BankBNI.png'),
+    bankmandiri: require('../Assets/Image/BankMandiri.png'),
+    bankcimb: require('../Assets/Image/BankCIMB.png'),
 }
 
 export default Images
