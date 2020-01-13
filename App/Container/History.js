@@ -62,7 +62,7 @@ export default class History extends Component {
 
                <View style={{ height: 60, width: '100%', backgroundColor: '#00CCFF', justifyContent: 'center' }}>
                 <View style={{ height: 50, width: '100%', backgroundColor: '#00CCFF', flexDirection: 'row', paddingHorizontal: 10, justifyContent: 'center' }} >
-                <TouchableOpacity onPress={() => this.props.navigation.navigate('Account')}style={{ width: '5%', alignSelf: 'center', justifyContent: 'center' }}>
+                <TouchableOpacity onPress={() => this.props.navigation.navigate('Home')}style={{ width: '5%', alignSelf: 'center', justifyContent: 'center' }}>
                         <Entypo name='chevron-thin-left' size={30} color='white' />
                     </TouchableOpacity>
                     <View style={{ width: '95%', justifyContent: 'center' }}>
@@ -88,8 +88,8 @@ export default class History extends Component {
 
 const styles = StyleSheet.create({
   container: { flex: 1, padding: 16, paddingTop: 30, backgroundColor: '#fff', width: '100%' },
-  head: { height: 40, width: '100%',left: 0, backgroundColor: '#343F4B' },
-  body: { height: 40, width: '100%',left: 0, backgroundColor: 'white' },
+  head: { height: 40, width: '100%',left: 0, backgroundColor: '#343F4B', elevation: 1 },
+  body: { height: 40, width: '100%',left: 0, backgroundColor: 'white', elevation: 1 },
   text: { margin: 6, color: 'white', textAlign: 'center' },
   text2: {color: 'black', textAlign: 'center', fontSize: 12}
 });

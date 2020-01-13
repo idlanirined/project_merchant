@@ -49,8 +49,8 @@ export default class HomePageScreen extends Component {
         <View style={{ backgroundColor: 'white', paddingHorizontal: 25, height: 60, borderBottomColor: '#dadada', borderBottomWidth: 1, elevation: 0, flexDirection: 'row', justifyContent: 'space-between' }}>
           <View style={{ flexDirection: 'column' }}>
             <Text style={{ marginLeft: 10, alignSelf: 'center', fontSize: 14, fontWeight: 'bold', left: -15 }}>Honda Jazz / D 1514 BFF</Text>
-            <Text style={{color: 'grey', marginLeft: 10, alignSelf: 'center', fontSize: 14, fontWeight: 'bold', left:-65 }}>7 min</Text>
-            <Text style={{ marginLeft: 25, alignSelf: 'center', fontSize: 14, fontWeight: 'bold', left: -65 }}>Prosess</Text>
+            <Text style={{color: 'grey', marginLeft: 10, alignSelf: 'center', fontSize: 14, fontWeight: 'bold', left:-75 }}>7 min</Text>
+            <Text style={{ marginLeft: 25, alignSelf: 'center', fontSize: 14, fontWeight: 'bold', left: -75 }}>Prosess</Text>
           </View>
 
           <Switch
