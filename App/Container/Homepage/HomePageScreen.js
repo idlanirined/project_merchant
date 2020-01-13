@@ -29,7 +29,7 @@ export default class HomePageScreen extends Component {
             <Text style={{ marginLeft: 10, alignSelf: 'center', fontSize: 16, fontWeight: 'bold' }}>Welcome</Text>
           </View>
           <View style={{ justifyContent: 'center' }}>
-            <Text style={{ marginLeft: 10, alignSelf: 'center', fontSize: 16, fontWeight: 'bold' }}>IDR 50.000,-</Text>
+            <Text style={{ marginLeft: 10, alignSelf: 'center', fontSize: 16 }}>IDR 50.000,-</Text>
           </View>
           <Switch
             value={this.state.switch}

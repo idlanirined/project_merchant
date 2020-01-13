@@ -59,7 +59,7 @@ class Topupp extends Component {
             <TouchableOpacity style={{flexDirection:'row', alignContent:'space-between', backgroundColor:'white', borderBottomColor:'#eaeaea', borderBottomWidth:1, borderBottomLeftRadius:20, height:60, paddingBottom:15}}>
             <Left style={{marginTop:-5}}>
             <Image source={Images.bankmandiri} style={{height:50, width: 50, top:20, left:10}}></Image>
-              <Text style={{fontFamily: Fonts.type.medium, fontSize: 18, paddingLeft:35, alignSelf:'center', top:-13}}>Mandiri</Text>
+              <Text style={{fontFamily: Fonts.type.light, fontSize: 18, paddingLeft:35, alignSelf:'center', top:-13}}>Mandiri</Text>
             </Left>
             <Right>
               <Image source={Images.backhitam} style={{width:20, height:20, left:-20, top:10}}></Image>
