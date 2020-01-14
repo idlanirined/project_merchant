@@ -16,6 +16,9 @@ import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import Entypo from 'react-native-vector-icons/Entypo';
 import Wallet from '../Container/Wallet'
 import History from '../Container/History'
+import Schedule from '../Container/Schedule'
+import Account from '../Container/Account'
+
 
 
 export default HomeNavigation = createBottomTabNavigator({
@@ -33,7 +36,7 @@ export default HomeNavigation = createBottomTabNavigator({
         }
     },
     Schedule: {
-        screen: HomePageScreen, 
+        screen: Schedule, 
         navigationOptions: {
             header: null,
             tabBarLabel: ({ tintColor }) => (
@@ -72,11 +75,11 @@ export default HomeNavigation = createBottomTabNavigator({
         }
     }, 
     Account: {
-        screen: HomePageScreen, 
+        screen: Account, 
         navigationOptions: {
             header: null,
             tabBarLabel: ({ tintColor }) => (
-                <Text style={[styles.label, { color: tintColor, marginBottom:10 }]}>Profile</Text>
+                <Text style={[styles.label, { color: tintColor, marginBottom:10 }]}>Account</Text>
             ),
             tabBarIcon: ({ tintColor }) => (  
                 <View style={{ justifyContent: 'center', alignSelf: 'center'}}>  

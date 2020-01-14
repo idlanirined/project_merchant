@@ -29,7 +29,7 @@ class Wallet extends Component {
                 {/* R*wash Balance */}
                 <TouchableOpacity style={{ backgroundColor: 'white', width: '100%', height: 60, borderRadius: 5, marginTop: 10, paddingVertical: 5, flexDirection: 'row', paddingHorizontal: 20, elevation: 2 }} onPress={() => this.props.navigation.navigate('')}>
 
-                    <Image source={Images.iconBalancenp} style={{ width: 35, height: 35, resizeMode: 'contain', alignSelf: 'center' }} />
+                    <Image source={Images.iconBalance} style={{ width: 35, height: 35, resizeMode: 'contain', alignSelf: 'center' }} />
                     <Text style={{ alignSelf: 'center', marginLeft: 20, fontFamily: Fonts.type.medium }}>R*Wash Balance</Text>
                     <Text style={{ alignSelf: 'center', marginLeft: 90, fontWeight: 'bold' }}>IDR 50.000,-</Text>
 

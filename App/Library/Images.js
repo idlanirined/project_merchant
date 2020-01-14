@@ -3,6 +3,7 @@ const Images = {
     login: require('../Assets/Logo/Login.png'),
     rwash: require('../Assets/Logo/Rwash.png'),
     register: require('../Assets/Logo/Register.png'),
+    avatar: require('../Assets/Logo/avatar.png'),
     
     //Icon
     iconEmail: require('../Assets/Icon/email.png'),
@@ -13,6 +14,7 @@ const Images = {
     iconOVO: require('../Assets/Icon/OVO.png'),
     iconBalance: require('../Assets/Icon/balance.png'),
     iconTopUp: require('../Assets/Icon/topup.png'),
+    iconAccount: require('../Assets/Icon/Account.png'),
 
     //Image
     newslot: require('../Assets/Image/newslot.png'),
