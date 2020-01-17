@@ -60,14 +60,14 @@ export default class HomePageScreen extends Component {
           />
         </View>
         {/* Add Slot*/}
-          <TouchableOpacity style={{ height: 1, borderBottomColor: '#dadada', marginTop:350}} />
-
-        <View style={{ paddingVertical: 10 , marginLeft:20}}>
+          <TouchableOpacity style={{alignContent:'space-between', backgroundColor:'white', height:460, top:380 }}>
           <Image source={Images.newslot} style={{height:70, width:70}}/>
           <Text style={{ paddingHorizontal: 85, fontWeight: 'bold', top: -50, fontSize:20 }}>Create New Slot</Text>
           <Text style={{ paddingHorizontal: 85, fontWeight: 'normal', top: -50, fontSize:14, color:'#aeaeae' }}>Add and delete slot</Text>
-          <Image source={Images.neww} style={{height:40, width:40, alignSelf:'flex-end', top: -100}}></Image>
-        </View>
+          <Image source={Images.neww} style={{height:40, width:40, left:270, top: -85}}></Image>
+          <Image source={Images.backhitam} style={{height:20, width:20, left:320, top: -113}}></Image>
+        </TouchableOpacity>
+       
           
       </ScrollView>
     );
