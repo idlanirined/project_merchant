@@ -16,6 +16,7 @@ import Schedule from '../Container/Schedule'
 import Account from '../Container/Account'
 import Topup from '../Container/Topup'
 import Profile from '../Container/Profile'
+import TopupOvo from '../Container/TopupOvo'
 
 
 
@@ -29,6 +30,7 @@ const MainNavigator = createStackNavigator({
     Account : { screen: Account , navigationOptions: { headerShown: false} },
     Topup : { screen: Topup , navigationOptions: { headerShown: false} },
     Profile : { screen: Profile , navigationOptions: { headerShown: false} },
+    TopupOvo : { screen: TopupOvo , navigationOptions: { headerShown: false} },
 
 }, {
     headerMode: 'screen',

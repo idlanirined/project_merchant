@@ -15,6 +15,7 @@ const Images = {
     iconBalance: require('../Assets/Icon/balance.png'),
     iconTopUp: require('../Assets/Icon/topup.png'),
     iconAccount: require('../Assets/Icon/Account.png'),
+    iconbca: require('../Assets/Icon/iconbca.png'),
 
     //Image
     newslot: require('../Assets/Image/newslot.png'),
@@ -26,6 +27,7 @@ const Images = {
     bankbni: require('../Assets/Image/BankBNI.png'),
     bankmandiri: require('../Assets/Image/BankMandiri.png'),
     bankcimb: require('../Assets/Image/BankCIMB.png'),
+    bgovo: require('../Assets/Image/backgroundovo.png'),
 }
 
 export default Images
